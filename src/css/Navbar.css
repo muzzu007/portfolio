@@ -1,0 +1,312 @@
+/* ---------------- NAVBAR ---------------- */
+
+.navbar{
+
+    position:fixed;
+    top:18px;
+    left:50%;
+    transform:translateX(-50%);
+
+    width:92%;
+    max-width:1350px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:18px 40px;
+
+    background:rgba(15,23,42,.72);
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:18px;
+
+    transition:.35s ease;
+
+    z-index:1000;
+
+    box-shadow:
+    0 10px 35px rgba(0,0,0,.18);
+}
+
+/* Navbar on Scroll */
+
+.navbar.scrolled{
+
+    padding:14px 40px;
+
+    background:rgba(15,23,42,.9);
+
+    box-shadow:
+    0 14px 40px rgba(0,0,0,.3);
+}
+
+/* ---------------- LOGO ---------------- */
+
+.logo{
+
+    color:white;
+
+    font-size:30px;
+
+    font-weight:700;
+
+    letter-spacing:.5px;
+
+    cursor:pointer;
+
+    transition:.35s;
+}
+
+.logo:hover{
+
+    transform:scale(1.05);
+}
+
+.logo span{
+
+    color:#3B82F6;
+}
+
+/* ---------------- LINKS ---------------- */
+
+.nav-links{
+
+    display:flex;
+
+    gap:42px;
+
+    list-style:none;
+
+    align-items:center;
+}
+
+.nav-links li{
+
+    position:relative;
+}
+
+.nav-links li span{
+
+    position:relative;
+
+    color:#CBD5E1;
+
+    font-size:16px;
+
+    font-weight:500;
+
+    user-select:none;
+
+    transition:.3s ease;
+
+    display:inline-block;
+}
+
+.nav-links li *{
+    cursor: pointer !important;
+}
+/* Hover */
+
+.nav-links li span:hover{
+
+    color:white;
+
+    transform:translateY(-2px);
+}
+
+/* Underline Animation */
+
+.nav-links li span::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:50%;
+
+    bottom:-8px;
+
+    width:0;
+
+    height:2px;
+
+    transform:translateX(-50%);
+
+    border-radius:50px;
+
+    background:#3B82F6;
+
+    transition:all .3s ease;
+}
+
+.nav-links li span:hover::after{
+
+    width:100%;
+}
+
+/* Active */
+
+.active-link{
+
+    color:#3B82F6 !important;
+
+    font-weight:600;
+}
+
+.active-link::after{
+
+    width:100% !important;
+}
+
+/* ---------------- SOCIAL ---------------- */
+
+.nav-icons{
+
+    display:flex;
+
+    gap:18px;
+}
+
+.nav-icons a{
+
+    color:white;
+
+    font-size:22px;
+
+    transition:.3s ease;
+}
+
+.nav-icons a:hover{
+
+    color:#3B82F6;
+
+    transform:translateY(-4px) scale(1.12);
+}
+
+/* ---------------- HAMBURGER ---------------- */
+
+.hamburger{
+
+    display:none;
+
+    color:white;
+
+    font-size:30px;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.hamburger:hover{
+
+    color:#3B82F6;
+}
+
+.mobile-icons{
+
+    display:none;
+}
+
+/* ---------------- MOBILE ---------------- */
+
+@media(max-width:900px){
+
+.navbar{
+
+    width:94%;
+
+    padding:15px 24px;
+
+    top:12px;
+}
+
+.nav-icons{
+
+    display:none;
+}
+
+.hamburger{
+
+    display:block;
+}
+
+.nav-links{
+
+    position:absolute;
+
+    top:85px;
+
+    left:0;
+
+    width:100%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:30px;
+
+    padding:35px 0;
+
+    background:rgba(15,23,42,.98);
+
+    border-radius:18px;
+
+    border:1px solid rgba(255,255,255,.06);
+
+    backdrop-filter:blur(18px);
+
+    transform:translateY(-20px);
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.35s ease;
+}
+
+.nav-links.active{
+
+    transform:translateY(0);
+
+    opacity:1;
+
+    visibility:visible;
+}
+
+.nav-links li span{
+
+    font-size:20px;
+}
+
+.mobile-icons{
+
+    display:flex;
+
+    gap:30px;
+
+    margin-top:10px;
+}
+
+.mobile-icons a{
+
+    color:white;
+
+    font-size:28px;
+
+    transition:.3s;
+}
+
+.mobile-icons a:hover{
+
+    color:#3B82F6;
+
+    transform:translateY(-3px);
+}
+
+}
