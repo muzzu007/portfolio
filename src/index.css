@@ -1,33 +1,27 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:"Poppins",sans-serif;
-}
+@import "tailwindcss";
 
-html{
-    scroll-behavior:smooth;
-}
-
-body{
-
-    background:#0F172A;
-
-    color:white;
-
-    overflow-x:hidden;
-}
-
-a{
-
-    text-decoration:none;
-
-    color:inherit;
-}
-
-button{
-
-    font-family:inherit;
-
-    cursor:pointer;
+/* Your custom global styles (e.g., fonts, base) */
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background: #0F172A; /* slate-900 */
+    color: white;
+    overflow-x: hidden;
+    font-family: "Poppins", sans-serif;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  button {
+    font-family: inherit;
+    cursor: pointer;
+  }
 }
