@@ -14,7 +14,7 @@ const skillCategories = [
       { icon: <FaPython />, name: "Python" },
       { icon: <FaJs />, name: "JavaScript" },
       { icon: <FaCode />, name: "Pandas" },
-      { icon: <FaCode />, name: "MumPy" },
+      { icon: <FaCode />, name: "NumPy" },
       { icon: <SiSqlite/>, name: "SQLite"}
 
     ],
@@ -30,6 +30,7 @@ const skillCategories = [
       { icon: <FaHtml5 />, name: "HTML" },
       { icon: <FaCss3Alt />, name: "CSS" },
       { icon: <FaLink />, name: "REST APIs" },
+      { icon: <LuGlobe />, name: "Vercel & Render Deployment" },
       
     ],
   },
