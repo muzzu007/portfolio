@@ -34,7 +34,7 @@ function Navbar() {
 
       {/* Nav Links - Desktop */}
       <ul className="hidden md:flex gap-10 items-center list-none">
-        {["about", "skills", "projects", "contact"].map((section) => (
+        {["about","experience", "skills", "projects", "contact"].map((section) => (
           <li key={section}>
             <Link
               activeClass="!text-blue-500 !font-medium after:!w-full" // keep font-weight same, underline full width
@@ -73,7 +73,7 @@ function Navbar() {
         }`}
       >
         <ul className="flex flex-col items-center gap-6 py-8 list-none">
-          {["about", "skills", "projects", "contact"].map((section) => (
+          {["about", "experience", "skills", "projects", "contact"].map((section) => (
             <li key={section}>
               <Link
                 activeClass="!text-blue-500 !font-medium"

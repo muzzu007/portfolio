@@ -64,9 +64,10 @@ function About() {
             <p className="text-slate-400 text-lg leading-relaxed mb-4">
               BCA graduate with a focus on full-stack web development and software logic.
             </p>
+           
             <p className="text-slate-400 text-lg leading-relaxed">
-              Experienced in building hands-on projects using Python, SQL, JavaScript, React, Node.js, and MongoDB. <br />I like solving practical tech problems, working with databases, and building clear, user-friendly applications.
-              Currently looking for entry-level opportunities in software development.
+              I run a menswear brand and have built its e-commerce storefront, and I've built a production React Native POS app for the game zone where I work — solving the exact problem I saw on the job.
+              {" "}I work with Python, SQL, JavaScript, React, Node.js, MongoDB, and deploy on Vercel and Render. Currently looking for entry-level software development roles.
             </p>
 
             {/* Resume Buttons */}

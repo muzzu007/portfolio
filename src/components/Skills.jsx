@@ -5,7 +5,7 @@ import {
   FaCode, FaLink
 } from "react-icons/fa";
 import { LuGlobe } from "react-icons/lu";
-import { SiExpress, SiMongodb, SiMysql, SiSqlite } from "react-icons/si";
+import { SiExpress, SiMongodb, SiMysql, SiSqlite, SiExpo,SiVercel,SiSupabase } from "react-icons/si";
 
 const skillCategories = [
   {
@@ -15,7 +15,7 @@ const skillCategories = [
       { icon: <FaJs />, name: "JavaScript" },
       { icon: <FaCode />, name: "Pandas" },
       { icon: <FaCode />, name: "NumPy" },
-      { icon: <SiSqlite/>, name: "SQLite"}
+      { icon: <SiSqlite />, name: "SQLite" }
 
     ],
   },
@@ -30,8 +30,19 @@ const skillCategories = [
       { icon: <FaHtml5 />, name: "HTML" },
       { icon: <FaCss3Alt />, name: "CSS" },
       { icon: <FaLink />, name: "REST APIs" },
-      { icon: <LuGlobe />, name: "Vercel & Render Deployment" },
-      
+
+
+    ],
+  },
+  {
+    name: "Mobile & Deployment",
+    skills: [
+      // 👇 Import SiExpo from "react-icons/si" for Expo
+      { icon: <SiExpo />, name: "React Native (Expo)" },
+      { icon: <FaCode />, name: "EAS Build" },
+      { icon: <SiVercel />, name: "Vercel" },        // 👈 import SiVercel from "react-icons/si"
+      { icon: <FaCode />, name: "Render" },
+      { icon: <SiSupabase />, name: "Supabase" },    // 👈 import SiSupabase
     ],
   },
   {
